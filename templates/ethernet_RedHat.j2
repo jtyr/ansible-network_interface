@@ -23,4 +23,10 @@ NETMASK={{ item.netmask }}
 {% if item.gateway is defined %}
 GATEWAY={{ item.gateway }}
 {% endif %}
+{% if item.dns1 is defined %}
+DNS1={{ item.dns1 }}
+{% endif %}
+{% if item.dns2 is defined %}
+DNS2={{ item.dns2 }}
+{% endif %}
 {% endif %}
