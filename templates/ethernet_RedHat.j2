@@ -10,6 +10,9 @@ ONBOOT={{ item.onboot }}
 {% endif %}
 {% if item.bootproto == 'dhcp' %}
 BOOTPROTO=dhcp
+{% if item.peerdns is defined %}
+PEERDNS={{ item.peerdns }}
+{% endif %}
 {% endif -%}
 
 {% if item.bootproto == 'static' %}

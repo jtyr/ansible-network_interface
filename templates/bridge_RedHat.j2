@@ -32,4 +32,7 @@ BOOTPROTO=dhcp
 {% if item.stp is defined %}
 STP={{ item.stp }}
 {% endif %}
+{% if item.peerdns is defined %}
+PEERDNS={{ item.peerdns }}
+{% endif %}
 {% endif %}
